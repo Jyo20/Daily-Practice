@@ -1,0 +1,25 @@
+.card {
+  border: 1px solid grey;
+  width: 300px;
+  padding: 10px; /*gap between border and content*/
+  margin: 10px; /* distance in outer side of box*/
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 300ms;
+}
+.card:hover {
+  /*zoom effect*/
+  width: 360px;
+  transform: rotate(4deg);
+  border-radius: 22px;
+}
+.cardimg {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap; /* medi screen resolution*/
+}
