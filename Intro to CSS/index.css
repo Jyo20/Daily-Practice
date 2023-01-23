@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;600&display=swap");
+h1 {
+  color: teal;
+  text-decoration: none; /*overline,underline, line through*/
+  font-style: italic; /*oblic*/
+  font-family: "League Spartan", sans-serif;
+}
+p {
+  color: rgb(48, 14, 14);
+  font-weight: lighter;
+  font-size: 20px;
+  font-weight: normal; /*font weight bold ,normal, lighter */
+}
