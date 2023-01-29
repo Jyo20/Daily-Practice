@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      body {
+        padding: 100px;
+      }
+      #container {
+        border: 0px solid;
+        width: 90%;
+        background-color: rgb(232, 245, 241);
+        margin: auto;
+        border-radius: 20px;
+        padding: 20px;
+        line-height: 15px;
+      }
+      #container img {
+        width: 50%;
+        height: 100px;
+        border: 0px solid;
+        border-radius: 20px 20px 0 0;
+      }
+      h3,
+      h1 {
+        padding-left: 100px;
+      }
+      #container > img + h3 {
+        color: grey;
+        font-size: 30px;
+        font-weight: lighter;
+      }
+      h1 + h3 {
+        font-size: 30px;
+        font-weight: lighter;
+      }
+      h1 {
+        font-size: 50px;
+        font-weight: bolder;
+      }
+      div input {
+        margin-top: 20px;
+        margin-left: 100px;
+        height: 40px;
+        border: 4px dashed blue;
+        font-size: 25px;
+        text-align: center;
+        width: 150px;
+        padding: 10px;
+        background-color: rgb(232, 245, 241);
+        font-weight: bold;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://raw.githubusercontent.com/akshkgd/mern-318/c8586850457a0137e7477acf7213aee622f32032/box%20model%20assignments/assets/https___booking.webestica.com_assets_images_client_07.svg-0.svg"
+        alt=""
+      />
+      <h3>Flat</h3>
+      <h1>$899 off</h1>
+      <h3>On Domestic Flights</h3>
+      <div>
+        <input type="text" value="LOG125F" readonly />
+      </div>
+    </div>
+  </body>
+</html>

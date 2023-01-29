@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-size: 13px;
+        line-height: 19px;
+        color: #111;
+      }
+      #container {
+        width: 120px;
+        border: 0px solid;
+        margin: auto;
+        padding: 20px;
+      }
+      #container img {
+        width: 100%;
+      }
+      #container2 {
+        border: 1px solid #ddd;
+        margin: auto;
+        width: 20%;
+        text-align: left;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #fff;
+        font-family: "Amazon Ember", Arial, sans-serif;
+      }
+      label {
+        font-weight: bolder;
+        font-size: 20px;
+        line-height: 10px;
+        border: 0px solid;
+        color: #111;
+        line-height: 1px;
+      }
+      h2 {
+        font-size: 35px;
+        border: 0px solid;
+      }
+      input {
+        width: 300px;
+        height: 30px;
+        border: 1px solid rgb(255, 171, 14);
+        border-color: #d00;
+        box-shadow: 0 0 0 3px rgba(238, 10, 10, 0.1) inset;
+      }
+      button {
+        width: 305px;
+        height: 35px;
+        font-size: 15px;
+        border: 1px solid #a88734;
+        background-color: #f0c14b;
+        font-family: Arial, sans-serif;
+      }
+      div h6 {
+        font-size: 15px;
+        width: 100%;
+        border: 0px solid;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-weight: lighter;
+        font-family: Arial, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #0066c0;
+      }
+      div a {
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt=""
+      />
+    </div>
+    <div id="container2">
+      <h2>Sign in</h2>
+      <label> Email or mobile phone number </label> <br />
+      <input type="text" />
+      <br />
+      <br />
+      <button>Continue</button>
+      <br />
+      <div>
+        <h6>
+          By continuing, you agree to Amazon's
+          <a href=""> Conditions of Use</a>
+          and <a href="">Privacy Notice.</a>
+        </h6>
+      </div>
+      <i class="fa-caret-left" style="width: 100px; height: 200px"></i
+      ><a href=""> Need help ?</a>
+    </div>
+  </body>
+</html>

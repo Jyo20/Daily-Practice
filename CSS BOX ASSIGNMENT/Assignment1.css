@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=League+Spartan:wght@200;400;600&family=Nunito&display=swap");
+#container {
+  border: 1px solid rgb(199, 198, 198);
+  width: 50%;
+  border-radius: 20px;
+  margin: auto;
+  padding-bottom: 50px;
+  
+}
+
+#container img {
+  width: 100%;
+  background-color: grey;
+  border-radius: 20px 20px 0 0;
+}
+#container h3 {
+  font-size: 25px;
+  margin-left: 30px;
+  color: rgb(139, 138, 138);
+  border: 0px solid;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
+#container i {
+  margin-right: 15px;
+}
+#container h1 {
+  margin-left: 30px;
+  border: 0px solid;
+  font-size: 35px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+#container p {
+  margin-left: 30px;
+  font-size: 25px;
+  color: rgb(80, 79, 79);
+  line-height: 35px;
+  font-family: "Open Sans", sans-serif;
+}
+button {
+  margin-left: 30px;
+  width: 200px;
+  font-size: 25px;
+  padding: 20px;
+  color: rgb(61, 61, 230);
+  background-color: white;
+  border: 1px solid rgb(156, 149, 149);
+  border-radius: 10px;
+  font-weight: 550;
+  cursor: pointer;
+}
