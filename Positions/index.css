@@ -4,10 +4,11 @@
   margin: 20px auto;
   padding: 10px;
   border-radius: 10px;
+  position: relative;
 }
 .container img {
   width: 100%;
-  height: 200px;
+  height: 400px;
 }
 button {
   border: 1px solid grey;
@@ -21,12 +22,15 @@ button {
   right: 0;
   margin: 24px;
 }
+#ad-container {
+  position: relative;
+}
 
 #ad {
   width: 50%;
   margin: auto;
-  position: sticky;
-  top: 5;
+  position: sticky; /* postion sticky means if i scroll the page ad not moving*/
+  top: 0;
   padding: 10px;
   border: 1px solid;
   border-radius: 16px;
@@ -36,7 +40,19 @@ button {
   height: 100px;
   border-radius: 10px;
 }
-
+.ad {
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+.ad h4 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
 #parent {
   background-color: blue;
   width: 500px;
@@ -50,14 +66,34 @@ button {
   margin: 50px;
   position: absolute;
 }
-#rel {
-  border: 0px solid;
-  width: 100px;
-  background-color: palevioletred;
-  position: relative;
+#btn {
+  position: absolute;
 }
 
-#abs {
-  top: 0;
+.abs {
   position: absolute;
+  background-color: #e44232;
+  margin: 20px;
+  top: 0;
+
+  padding: 4px 18px;
+  border-radius: 50px;
+  font-size: 10px;
+  color: white;
+}
+
+#abs2 {
+  width: 100px;
+  position: absolute;
+  margin: 120px 350px 900px;
+  top: 0;
+}
+#abs2 button {
+  width: 100px;
+  padding: 10px;
+  margin-left: 50px;
+  background-color: teal;
+  height: 50px;
+  font-size: 13px;
+  cursor: pointer;
 }
