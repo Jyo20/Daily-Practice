@@ -1,0 +1,32 @@
+.container {
+  background-color: blue;
+  border: 0px solid;
+  width: 700px;
+  margin: 70px auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.flexbox {
+  background-color: aliceblue;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card2 {
+  width: 400px;
+}
+.card1 {
+  height: 200px;
+}
+
+.card4 {
+  width: 50px;
+}
+
+.card3 {
+  width: 200px;
+}

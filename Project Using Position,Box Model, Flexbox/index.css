@@ -1,0 +1,47 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.card {
+  width: 400px;
+  margin: 50px auto;
+  background-color: rgb(216, 208, 210);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 50%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex p {
+  font-weight: bold;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 150px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.icon {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.card2 {
+  width: 600px;
+  display: flex;
+}
+.content {
+  margin: 30px;
+}
