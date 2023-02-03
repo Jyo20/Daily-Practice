@@ -69,13 +69,15 @@ button {
 #btn {
   position: absolute;
 }
-
+.abs img {
+  width: 100%;
+  height: 400px;
+}
 .abs {
   position: absolute;
   background-color: #e44232;
   margin: 20px;
   top: 0;
-
   padding: 4px 18px;
   border-radius: 50px;
   font-size: 10px;
@@ -96,4 +98,15 @@ button {
   height: 50px;
   font-size: 13px;
   cursor: pointer;
+}
+.likes {
+  position: absolute;
+  background-color: #e44232;
+  margin: 20px;
+  bottom: 0;
+  right: 0;
+  padding: 4px 18px;
+  border-radius: 50px;
+  font-size: 10px;
+  color: white;
 }
