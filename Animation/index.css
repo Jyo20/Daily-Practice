@@ -1,0 +1,40 @@
+.demo {
+  height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  background-color: tomato;
+  /*animation*/
+
+  animation-name: demo_animation; /*Any anme */
+  animation-duration: 3s; /*Time duration 1sec increse and 10sec decrese  */
+  animation-fill-mode: forwards; /*Stop at yhe end not return*/
+  animation-iteration-count: infinite; /*Animation start 2 time as i giving 2 time*/
+  animation-direction: alternate; /*Animation direction is reverse*/
+}
+@keyframes demo_animation {
+  20% {
+    /*Chane color*/
+    background-color: darkorchid;
+  }
+  40% {
+    /*Chane color*/
+    background-color: yellowgreen;
+  }
+  60% {
+    /*Chane color*/
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-left: 600px;
+  }
+  80% {
+    /*Chane color*/
+    background-color: rgb(204, 81, 50);
+  }
+  100% {
+    /*task complitation rate is 100% or 50%*/
+    /* margin-left: 900px; it moves to left to right*/
+    margin-top: 600px;
+    border-radius: 50%;
+    background-color: teal;
+  }
+}
