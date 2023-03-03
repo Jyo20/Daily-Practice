@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Assignment</title>
+    <style>
+      .container {
+        border: 0px solid;
+        width: 500px;
+        margin: auto;
+        padding: 20px;
+        position: relative;
+      }
+      .container img {
+        width: 100%;
+        border-radius: 30px;
+        height: 500px;
+      }
+      .container h1 {
+        font-weight: 900;
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      span {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(18, 189, 95);
+        margin-right: 20px;
+      }
+      p {
+        font-size: 23px;
+        color: grey;
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      .abs {
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0px solid;
+        margin: 35px;
+        width:400px;
+        
+       
+      }
+      .adv {
+        margin-left: 0px;
+        padding:15px 15px 15px 25px;
+        width: 150px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 12px;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .star {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 12px;
+        width: 100px;
+        border-radius: 12px;
+        border: none;
+        position:absolute;
+        right:0;
+        
+      }
+      .bi{
+        color:rgb(241, 197, 51);
+      }
+      button {
+        display: flex;
+        justify-content: space-between;
+      }
+      .abs2{
+        position: absolute;
+        left:0;
+        bottom: 200px;
+        margin-left: 45px;
+        color: white;
+      }
+      .abs2 h1{
+        border: 1px solid;
+        padding: 5px;
+        width: 250px;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 14px;
+        font-weight: lighter;
+        margin-bottom: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1602170293766-95e21b034c72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        alt=""
+      />
+      <div class="abs">
+        <button class="adv">Adventure</button>
+        <button class="star"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg> 4.3</button>
+      </div>
+      
+      <div class="abs2"><h1>6 days / 5 nights</h1></div>
+
+      <h1>Lombok, Indonesia</h1>
+      <p><span>$1358</span> Starting price</p>
+    </div>
+  </body>
+</html>
