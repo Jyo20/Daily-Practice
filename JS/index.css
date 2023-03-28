@@ -1,0 +1,67 @@
+.container {
+  border: 0px solid;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+.left-container {
+  border: 1px solid grey;
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 12px;
+}
+
+.right-container {
+  border: 0px solid grey;
+  box-sizing: border-box;
+  width: 100vh;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
+input {
+  padding: 15px;
+  font-size: 15px;
+  margin: 0px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(161, 255, 161);
+  color: rgb(37, 97, 37);
+}
+#btn {
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 15px;
+  margin: auto;
+  border: none;
+  background-color: rgb(231, 175, 175);
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: lightcoral;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+table {
+  width: 100%;
+  border: 0px solid;
+  box-sizing: content-box;
+}
+thead tr th {
+  background-color: rgb(217, 196, 236);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+tbody td {
+  color: white;
+}
