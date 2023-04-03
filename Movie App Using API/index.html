@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!--Heading Section-->
+    <section class="">
+      <h1 class="fw-bold text-primary text-center m-auto p-3">Movie App</h1>
+    </section>
+
+    <!--Search Section-->
+    <section>
+      <div class="text-center container search-container">
+        <input
+          type="text"
+          id="movieName"
+          placeholder="Search Movie Name.."
+          class="search my-4"
+        />
+        <div class="">
+          <button
+            onclick="searchMovies() "
+            class="btn btn-primary text-light rounded-pill search-btn fw-bold"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="loader"></div>
+      </div>
+    </section>
+    <!-- Image Slideshow Section-->
+    <section>
+      <div class="row">
+        <div id="slideshow" class=" p-1"></div>
+      </div>
+    </section>
+    <!--Movie Section-->
+    <section class="bg-dark movie">
+        <div class="movie-container d-flex" id="movie-container">
+            <!-- <div class="content text-light ">
+              <h1>Dangal</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto adipisci facilis?</p>
+            </div>
+            <img class="img-fluid m-auto" src="https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_SX300.jpg" alt="">
+             -->
+          </div>
+        
+    </section>
+  
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./Js/index.js"></script>
+</html>

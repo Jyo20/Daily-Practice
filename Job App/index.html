@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job App</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="applied.html">Applied Job</a></li>
+        <li><a href="bookmark.html">Bookmark</a></li>
+      </ul>
+    </nav>
+    <section>
+      <form id="form" onsubmit="getData()">
+        <h3>Enter Your Application Details</h3>
+        <input type="text" placeholder="Enter Your Name" id="name" />
+        <input type="email" placeholder="Enter your Email" id="email" />
+        <select id="role" name="role">
+          <option value="">Select Job Role</option>
+          <option value="FSD">FSD</option>
+          <option value="Backend">Backend</option>
+          <option value="FrontEnd">FrontEnd</option>
+          <option value="Software">Software Developer</option>
+        </select>
+        <input
+          type="number"
+          id="salary"
+          placeholder="Enter Expected salary in lakhs"
+        />
+        <input type="submit" id="submit" value="submit" class="btn" />
+      </form>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

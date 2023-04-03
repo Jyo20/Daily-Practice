@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job App</title>
+    <link rel="stylesheet" href="./css/applied.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="applied.html">Applied Job</a></li>
+        <li><a href="bookmark.html">Bookmark</a></li>
+      </ul>
+    </nav>
+    <!--Filtering Section-->
+    <section>
+      <div class="filter">
+        <select>
+          <option value="">Sort by Name</option>
+          <option value="Ascending">Ascending</option>
+          <option value="Descending">Descending</option>
+        </select>
+        <select>
+          <option value="">Sort By Salary</option>
+          <option value="Ascending">Ascending</option>
+          <option value="Descending">Descending</option>
+        </select>
+        <select>
+          <option value="">Fileter By Job Role</option>
+          <option value="FSD">FSD</option>
+          <option value="Backend">Backend</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Software Developer">Software Developer</option>
+        </select>
+      </div>
+    </section>
+    <!--Table section-->
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Job Applied</th>
+            <th>Salary Expected</th>
+            <th>Add to Bookmark</th>
+          </tr>
+        </thead id="body">
+        <!--Appending all data-->
+      </table>
+    </section>
+  </body>
+</html>
