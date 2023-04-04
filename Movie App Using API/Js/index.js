@@ -41,7 +41,7 @@ slidshow();
 //   }
 // }
 /**Spinner Code */
-let key = "http://www.omdbapi.com/?apikey=19f4c335&t=";
+let key = "https://www.omdbapi.com/?apikey=19f4c335&t=";
 let loaderStatus = false;
 function checkLoaderStatus() {
   let loader = document.getElementById("loader");
@@ -72,22 +72,42 @@ function searchMovies() {
 }
 
 function displayData(data) {
+  document.getElementById("movie-container").innerHTML = "";
   let div = document.createElement("div");
   div.classList.add("content");
   let MovieName = document.createElement("h1");
   MovieName.innerText = data.Title;
   let description = document.createElement("p");
   description.innerText = data.Plot;
-  let language = document.createElement("p");
+
+  let language = document.createElement("h4");
   language.innerText = data.Language;
+  language.style.fontWeight = "bold";
+  language.style.fontSize = "20px";
   language.style.fontSize = "13px";
+  let actors = document.createElement("h4");
+  actors.innerText = "Actors" + " :" + " " + data.Actors;
+  let awards = document.createElement("h4");
+  awards.innerText = "Awards " + " :" + " " + data.Awards;
+  let director = document.createElement("h4");
+  director.innerText = "Director" + " :" + " " + data.Director;
   let rating = document.createElement("button");
-  rating.innerText = "imdbRating" + " " + data.imdbRating;
-  rating.style.padding = "10px";
+  rating.innerText = "imdbRating" + ": " + " " + data.imdbRating;
+  rating.style.padding = "8px";
+  rating.style.fontWeight = "bold";
   rating.style.borderRadius = "14px";
   let image = document.createElement("img");
   image.src = data.Poster;
-  div.append(MovieName, language, description, rating);
+  image.style.borderRadius = "15px";
+  div.append(
+    MovieName,
+    language,
+    description,
+    actors,
+    awards,
+    director,
+    rating
+  );
 
   document.getElementById("movie-container").append(div);
   document.getElementById("movie-container").append(image);

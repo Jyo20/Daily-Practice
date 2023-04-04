@@ -47,3 +47,25 @@ body {
 .content {
   width: 500px;
 }
+p {
+  font-size: 17px;
+}
+
+.movie-container h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#f3b530, #525151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movie-container img:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.movie-container img {
+  margin-left: 50px;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
