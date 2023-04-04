@@ -30,3 +30,35 @@ nav ul :hover {
   border: none;
   border-radius: 12px;
 }
+/*Table Css*/
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+tr > th {
+  background-color: teal;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+th:hover {
+  background-color: rgb(98, 160, 160);
+  color: black;
+}

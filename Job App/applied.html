@@ -19,22 +19,22 @@
     <!--Filtering Section-->
     <section>
       <div class="filter">
-        <select>
+        <select id="sortbyName">
           <option value="">Sort by Name</option>
           <option value="Ascending">Ascending</option>
           <option value="Descending">Descending</option>
         </select>
-        <select>
+        <select id="sortbySalary">
           <option value="">Sort By Salary</option>
           <option value="Ascending">Ascending</option>
           <option value="Descending">Descending</option>
         </select>
-        <select>
+        <select id="filterbyrole">
           <option value="">Fileter By Job Role</option>
           <option value="FSD">FSD</option>
           <option value="Backend">Backend</option>
-          <option value="Frontend">Frontend</option>
-          <option value="Software Developer">Software Developer</option>
+          <option value="FrontEnd">Frontend</option>
+          <option value="Software">Software Developer</option>
         </select>
       </div>
     </section>
@@ -49,9 +49,132 @@
             <th>Salary Expected</th>
             <th>Add to Bookmark</th>
           </tr>
-        </thead id="body">
-        <!--Appending all data-->
+        </thead>
+        <!--Appending all data in tbody-->
+        <tbody></tbody>
       </table>
     </section>
   </body>
+  <script>
+    //retriving data from index page to applied page using localstorage
+    let storeData = JSON.parse(localStorage.getItem("data")) || [];
+    //Storing Bookmark Data
+    let bookmarkArr = JSON.parse(localStorage.getItem("bookmark")) || [];
+    //console.log(storeData)
+    displayData(storeData);
+    //Filter Section function Start
+    //sorting by name
+    document.getElementById("sortbyName").addEventListener("change", nameSort);
+    function nameSort() {
+      let selectorN = document.getElementById("sortbyName").value;
+      if (selectorN == "Ascending") {
+        storeData.sort(function (a, b) {
+          let x = a.name.toUpperCase();
+          let y = b.name.toUpperCase();
+          if (x > y) return 1;
+          if (x < y) return -1;
+          return 0;
+        });
+        console.log(storeData);
+        displayData(storeData);
+      }
+      //Descending Sorting
+      if (selectorN == "Descending") {
+        storeData.sort(function (a, b) {
+          let x = a.name.toUpperCase();
+          let y = b.name.toUpperCase();
+          if (x > y) return -1;
+          if (x < y) return 1;
+          return 0;
+        });
+        console.log(storeData);
+        displayData(storeData);
+      }
+    }
+    //Ending Sort by name function
+    /////////////////////////////////////////////////////
+    //Sorting By  salary
+    document
+      .getElementById("sortbySalary")
+      .addEventListener("change", salarySort);
+    function salarySort() {
+      let salaryselect = document.getElementById("sortbySalary").value;
+      if (salaryselect == "Ascending") {
+        storeData.sort(function (a, b) {
+          let x = a.salary;
+          let y = b.salary;
+          if (x > y) return 1;
+          if (x < y) return -1;
+          return 0;
+        });
+        console.log(storeData);
+        displayData(storeData);
+      }
+      //Descending sorting  Salary
+      if (salaryselect == "Descending") {
+        storeData.sort(function (a, b) {
+          let x = a.salary;
+          let y = b.salary;
+          if (x > y) return -1;
+          if (x < y) return 1;
+          return 0;
+        });
+        console.log(storeData);
+        displayData(storeData);
+      }
+    }
+    //Descending sorting  Salary End
+    //Filter  by role
+    document
+      .getElementById("filterbyrole")
+      .addEventListener("change", roleFilter);
+    function roleFilter() {
+      let filterS = document.getElementById("filterbyrole").value;
+      let filterList = storeData.filter(function (ele) {
+        return ele.role == filterS;
+      });
+      console.log(filterList);
+      displayData(filterList);
+    }
+    function displayData(storeData) {
+      document.querySelector("tbody").innerHTML = "";
+      storeData.forEach(function (ele, i) {
+        let tr = document.createElement("tr");
+
+        let td1 = document.createElement("td");
+        td1.innerText = ele.name;
+
+        let td2 = document.createElement("td");
+        td2.innerText = ele.email;
+
+        let td3 = document.createElement("td");
+        td3.innerText = ele.role;
+
+        let td4 = document.createElement("td");
+        td4.innerText = ele.salary;
+
+        let td5 = document.createElement("td");
+        td5.innerText = "Bookmark";
+        //class name added
+        td5.classList.add("bookmark");
+        td5.addEventListener("click", function () {
+          bookmarkfun(ele, i);
+        });
+        td5.style.backgroundColor = "lightgrey";
+        td5.style.fontWeight = "bold";
+        td5.style.fontSize = "20px";
+        td5.style.textAlign = "center";
+        td5.style.cursor = "pointer";
+        tr.append(td1, td2, td3, td4, td5);
+        document.querySelector("tbody").append(tr);
+      });
+    }
+
+    function bookmarkfun(ele, i) {
+      bookmarkArr.push(ele);
+      localStorage.setItem("bookmark", JSON.stringify(bookmarkArr));
+      displayData(storeData);
+      console.log(bookmarkArr);
+    }
+  </script>
 </html>
