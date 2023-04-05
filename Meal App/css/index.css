@@ -24,3 +24,53 @@ ul li {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+.meal-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  width: 300px;
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+}
+#mealdata {
+  margin: 50px auto;
+}
+
+.meals-card {
+  margin: auto;
+  border: 1px solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meals-card h3 {
+  text-align: left;
+}
+.meals-card img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.meals-card p {
+  line-height: 30px;
+  font-size: 20px;
+  background: -webkit-linear-gradient(#085555, #663003);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.meals-card h3 {
+  line-height: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 10px;
+  background: -webkit-linear-gradient(#f10c0c, #922d05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
