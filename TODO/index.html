@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <h1>My Todo's</h1>
+          <div class="card" id="card">
+            <img src="./img/no task.jpg" alt="" />
+            <h3>You have no task today</h3>
+            <p>
+              You have no new tasks today. <br />
+              Start adding your new tasks!
+            </p>
+          </div>
+          <div class="todo-body" id="todo-body"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="todo-container">
+        <input type="text" placeholder="Task name here" id="title" />
+        <input type="text" placeholder="Description" id="desc" />
+        <div class="flex">
+          <input type="datetime-local" placeholder="Due Date" id="duedate" />
+          <button class="btn" onclick="addTodo()">Add Task</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
