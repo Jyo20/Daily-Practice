@@ -1,0 +1,28 @@
+.container {
+  width: 520px;
+  text-align: left;
+  margin-top: 100px;
+}
+.grey {
+  color: grey;
+}
+.input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid lightgrey;
+  border-radius: 12px;
+}
+.input:focus {
+  outline: none;
+  border: 1px solid rgb(0, 119, 238);
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-top: 20px;
+}
